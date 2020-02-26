@@ -1,0 +1,25 @@
+  .grid {
+    /* width = width of each cell * no.of cells in each row + 100 for borders*/
+    width: 1600px;
+    /* remove the gap between two rows */
+    line-height: 0;
+  }
+
+  .cell {
+    height: 15px;
+    width: 15px;
+    display: inline-block;       
+    border: 1px solid black;
+    /* helps to remove the overlap of margins among adjacent cells */
+    margin-left: -1px;
+    margin-bottom: -1px; 
+
+  }
+
+  .dead {
+    background-color: grey;
+  }
+
+  .alive {
+    background-color: pink;
+  }
